@@ -1,0 +1,82 @@
+<ion-header no-border>
+  <h1>pagina de registro</h1>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Apellidos</ion-label>
+    <ion-input type="text" [(ngModel)]="apellido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Nombres</ion-label>
+    <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Codigo</ion-label>
+    <ion-input type="tel" [(ngModel)]="codigo"></ion-input>
+  </ion-item>
+
+  <ion-item (click)="Carrera()">
+    {{carrera}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Semestre</ion-label>
+    <ion-input type="tel" [(ngModel)]="semestre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Edad</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Peso</ion-label>
+    <ion-input type="tel" [(ngModel)]="peso"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Talla</ion-label>
+    <ion-input type="tel" [(ngModel)]="talla"></ion-input>
+  </ion-item>
+
+  <ion-item (click)="Carrera()">
+    {{objetivos}}
+  </ion-item>
+
+<ion-item (click)="Carrera()">
+    {{IMC}} "TEXTO DEL IMC"
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>pRESION ARTERIAL</ion-label>
+    <ion-input type="tel" [(ngModel)]="talla"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>FRECUENCIA CARDICACA</ion-label>
+    <ion-input type="tel" [(ngModel)]="talla"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>FRECUENCIA RESPIRATORIA</ion-label>
+    <ion-input type="tel" [(ngModel)]="talla"></ion-input>
+  </ion-item>
+
+
+
+  <button ion-button icon-left color="dark" (click)='guardar()'>
+  <ion-icon name="logo-freebsd-devil"></ion-icon>
+    Guardar
+</button>
+
+
+</ion-content>

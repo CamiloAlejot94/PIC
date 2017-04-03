@@ -8,8 +8,7 @@ import { environment } from './environment';
 // -----------------------------------------------------------------
 // Pages
 // -----------------------------------------------------------------
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { Registro } from '../pages/registro/registro'
 // -----------------------------------------------------------------
 // Libraries
 // -----------------------------------------------------------------
@@ -29,7 +28,7 @@ export class MyApp {
 
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = Page1;
+	rootPage: any = Registro;
 
 	pages: Array<{ title: string, component: any }>;
 
@@ -42,8 +41,8 @@ export class MyApp {
 		firebase.initializeApp(environment.firebaseConfig)
 		// Estructura para navegar entre páginas
 		this.pages = [
-			{ title: 'Page One', component: Page1 },
-			{ title: 'Page Two', component: Page2 }
+			{ title: 'Registro', component: Registro },
+			
 		];
 	}
 

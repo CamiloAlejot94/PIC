@@ -7,8 +7,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 // Page
 // -----------------------------------------------------------------
 import { MyApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { Registro } from '../pages/registro/registro'
+
 // -----------------------------------------------------------------
 // Providers
 // -----------------------------------------------------------------
@@ -19,8 +19,8 @@ import {ComunService} from '../providers/comun-service'
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2
+    Registro
+    
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -28,8 +28,7 @@ import {ComunService} from '../providers/comun-service'
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2
+    Registro
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},FirebaseService,ComunService]
 })

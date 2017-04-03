@@ -39,8 +39,12 @@ export class FirebaseService {
 		return new Promise((result, err) => {
 			firebase.auth().createUserWithEmailAndPassword(email, pass).then((user) => {
 				result(user)
+				console.log(user);
+				
 			}).catch((error: firebase.FirebaseError) => {
 				err(this.getErrorLogin(error))
+				console.log(error);
+				
 			})
 		})
 	}
